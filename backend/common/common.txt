@@ -1,0 +1,5 @@
+common in front end only 
+jwt secret then mongodb connection will be here 
+
+common in front and backend 
+zod 

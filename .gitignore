@@ -1,0 +1,29 @@
+# Ignore node modules (all folders)
+**/node_modules/
+
+# Ignore environment variables
+**/.env
+
+# Logs
+**/npm-debug.log
+**/yarn-debug.log
+**/yarn-error.log
+
+# Build output
+**/dist/
+**/build/
+
+# OS-specific files
+.DS_Store
+Thumbs.db
+
+# IDE-specific files
+.vscode/
+.idea/
+
+# Optional: Ignore coverage reports and test snapshots
+**/coverage/
+**/__snapshots__/
+
+# Optional: Ignore logs
+**/*.log
