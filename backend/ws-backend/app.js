@@ -12,7 +12,7 @@ mongoose.connect(process.env.MONGODB_URI, {
   useNewUrlParser: true,
   useUnifiedTopology: true
 }).then(() => {
-  console.log('✅ WS-Backend connected to MongoDB');
+  console.log('WS-Backend connected to MongoDB');
   Chat = require('./models/Chat');
   Room = require('./models/Room');
   Shape=require('./models/Shape');
@@ -69,7 +69,7 @@ function startWebSocketServer() {
       const user = users.find(u => u.ws === ws);
       if (!user) return;
 
-      // 🚪 CREATE ROOM
+      //  CREATE ROOM
      if (parsedData.type === 'create_room') {
   const newRoomId = parsedData.roomId;
   try {
